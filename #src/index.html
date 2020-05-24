@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Chuck Norris Jokes Generator</title>
+</head>
+<body class="body">
+	<main class="main">
+		<section class="static-content">
+			<div class="header">
+				<h1 class="logo">MSI 2020</h1>
+				<div class="nav nav--header">
+					<button class="btn-menu" id="btn_open"></button>
+					<h2 class="heading">Favourite</h2>
+				</div>
+			</div>
+			<div class="static-content__center">
+				<h2 class="static-content__header"> Hey!</h2>
+				<p class="static-content__description">Let’s try to find a joke for you:</p>
+				<form class="form" action="#" id="form">
+					<div class="form__item">
+						<input class="form__field" type="radio" id="random" name="choice" value="random" checked >
+						<label class="form__value" for="random">Random</label>
+					</div>
+					<div class="form__item form__item--category">
+						<input class="form__field" type="radio" id="categories" name="choice" value="categories">
+						<label class="form__value" for="categories">From caterogies</label>
+					</div>
+					<div class="form__item form__item--search">
+						<input class="form__field" type="radio" id="search" name="choice" value="search">
+						<label class="form__value" for="search">Search</label>
+					</div>
+					<button class="form__submit" type="submit" id="submit">Get a joke</button>
+				</form>
+				<div id="root"></div>
+			</div>
+		</section>
+		<section class="favorite-content favorite-block">
+			<div class="nav nav--favorite">
+				<button class="btn-menu btn-menu--close" id="btn_close"></button>
+				<h2 class="heading favorite-content__header">Favourite</h2>
+			</div>
+			<div class="favorite__content" id="favorite"></div>
+		</section>
+	</main>
+	<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+.joke {
+	background: #F8F8F8;
+	border-radius: 20px;
+	padding: 65px 40px 45px 40px;
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.favorite-content .joke {
+	padding: 47px 20px 20px 20px;
+	background: #FFFFFF;
+}
+
+.joke__content {
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.joke__icon {
+	width: 40px;
+	height: 40px;
+	display: block;
+	border-radius: 50%;
+	background: white url('../../img/message.svg') no-repeat;
+	background-position: 50% 50%;
+	margin-right: 20px;
+}
+
+.favorite-content .joke__icon {
+	background: #F8F8F8 url('../../img/message.svg') no-repeat;
+	background-position: 50% 50%;
+}
+
+.joke__description {
+	margin: 0;
+	width: 100%;
+	font-size: 18px;
+	line-height: 26px;
+	margin-bottom: 28px;
+	word-break: break-word;
+}
+
+.joke__data-update,
+.joke__id,
+.joke__id-text,
+.joke__category,
+.form__category {
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 14px;
+}
+
+.joke__id {
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+.joke__id-text, 
+.joke__data-update {
+	color: $text-color-secondary;
+}
+
+.joke__link {
+	position: relative;
+	color: #8EA7FF;
+	&:after {
+		content: "";
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		margin-left: 5px;
+		background: url("../../img/link.svg") no-repeat;
+		background-position: bottom;
+	}
+}
+
+.joke__save {
+	width: 25px;
+  height: 22px;
+	display: block;
+	background: url('../../img/save.svg') no-repeat;
+	background-position: 50% 50%;
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	border: 0;
+	cursor: pointer;
+}
+
+.joke__save.active {
+	background: url('../../img/heart-fill.svg') no-repeat;
+	background-position: 50% 50%;
+}
+
+.favorite-content .joke__save {
+	background: url('../../img/heart-fill.svg') no-repeat;
+	background-position: 50% 50%;
+	top: 20px;
+	right: 20px;
+}
+
+.joke__category,
+.form__category {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	display: inline-block;
+	border-radius: 6px;
+}
+
+.joke__category {
+	background: #FFFFFF;
+	padding: 6px 20px;
+}
+
+.favorite-content .joke__category {
+	display: none;
+}
