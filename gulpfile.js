@@ -1,10 +1,10 @@
 let project_folder = 'build';
 let source_folder = '#src';
 const ghPages = require('gh-pages');
-const path = require('path');
+const pathBuild = require('path');
 
 function deploy(cb) {
-	ghPages.publish(path.join(process.cwd(), './build'), cb);
+	ghPages.publish(pathBuild.join(process.cwd(), './build'), cb);
 }
 exports.deploy = deploy;
 

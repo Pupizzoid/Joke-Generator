@@ -26,13 +26,13 @@
 	height: 40px;
 	display: block;
 	border-radius: 50%;
-	background: white url('../../img/message.svg') no-repeat;
+	background: white url('../img/message.svg') no-repeat;
 	background-position: 50% 50%;
 	margin-right: 20px;
 }
 
 .favorite-content .joke__icon {
-	background: #F8F8F8 url('../../img/message.svg') no-repeat;
+	background: #F8F8F8 url('../img/message.svg') no-repeat;
 	background-position: 50% 50%;
 }
 
@@ -74,7 +74,7 @@
 		width: 10px;
 		height: 10px;
 		margin-left: 5px;
-		background: url("../../img/link.svg") no-repeat;
+		background: url("../img/link.svg") no-repeat;
 		background-position: bottom;
 	}
 }
@@ -83,7 +83,7 @@
 	width: 25px;
   height: 22px;
 	display: block;
-	background: url('../../img/save.svg') no-repeat;
+	background: url('../img/save.svg') no-repeat;
 	background-position: 50% 50%;
 	position: absolute;
 	top: 40px;
@@ -93,12 +93,12 @@
 }
 
 .joke__save.active {
-	background: url('../../img/heart-fill.svg') no-repeat;
+	background: url('../img/heart-fill.svg') no-repeat;
 	background-position: 50% 50%;
 }
 
 .favorite-content .joke__save {
-	background: url('../../img/heart-fill.svg') no-repeat;
+	background: url('../img/heart-fill.svg') no-repeat;
 	background-position: 50% 50%;
 	top: 20px;
 	right: 20px;
